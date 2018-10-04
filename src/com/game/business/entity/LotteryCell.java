@@ -4,7 +4,7 @@ public class LotteryCell implements Cell {
 
 	@Override
 	public int performAction(Player player) {
-		// TODO Auto-generated method stub
+		player.setMoney(player.getMoney().addMoney(200));
 		return 0;
 	}
 

@@ -4,7 +4,7 @@ public class JailCell implements Cell {
 
 	@Override
 	public int performAction(Player player) {
-		// TODO Auto-generated method stub
+		player.setMoney(player.getMoney().subtractMoney(150));
 		return 0;
 	}
 

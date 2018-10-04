@@ -8,7 +8,7 @@ public class Board {
 			
 		}
 		
-		Board(Player[] players) {
+		public Board(Player[] players) {
 			for(int i = 0; i<cells.length; i++) {
 				if(i==2 || i==9 || i==20 || i== 27) {
 					cells[i] = new SilverHotelCell();

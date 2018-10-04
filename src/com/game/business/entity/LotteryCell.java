@@ -3,9 +3,9 @@ package com.game.business.entity;
 public class LotteryCell implements Cell {
 
 	@Override
-	public int performAction(Player player) {
-		player.setMoney(player.getMoney().addMoney(200));
-		return 0;
+	public void performAction(Player player, Bank bank, Board board) {
+		player.getMoney().addMoney(200);
+		bank.getMoney().subtractMoney(150);
 	}
 
 }

@@ -30,11 +30,13 @@ public class Player {
 	public void setCurrentPosition(int currentPosition) {
 		this.currentPosition = currentPosition;
 	}
-	public void move(Board board, Bank bank) {
-		int diceNumber = dice.getNumber();
+	public void move(int diceNum, Board board, Bank bank) {
+		int diceNumber = diceNum;
 		Cell[] cells = board.getCells();
-		Cell cell = cells[diceNumber];
-		cell.performAction(this);
+		
+		this.currentPosition = currentPosition + diceNumber;
+		Cell cell = cells[currentPosition];
+		cell.performAction(this,bank,board);
 	}
 	
 }

@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 
 public class Money {
 	private BigDecimal value;
+	private BigDecimal asset = new BigDecimal(0);
 	
 	
 
@@ -19,12 +20,30 @@ public class Money {
 	public void setValue(BigDecimal value) {
 		this.value = value;
 	}
+	
+	
 
-	public Money addMoney(int i) {
-		return new Money(this.value.add(new BigDecimal(i)));
+	public BigDecimal getAsset() {
+		return asset;
 	}
 
-	public Money subtractMoney(int i) {
-		return new Money(this.value.subtract(new BigDecimal(i)));
+	public void setAsset(BigDecimal asset) {
+		this.asset = asset;
+	}
+
+	public void addMoney(int i) {
+		this.value = this.value.add(new BigDecimal(i));
+	}
+
+	public void subtractMoney(int i) {
+		this.value = this.value.subtract(new BigDecimal(i));
+	}
+	
+	public void addAsset(int i) {
+		this.asset = this.asset.add(new BigDecimal(i));
+	}
+
+	public void subtractAsset(int i) {
+		this.asset = this.asset.subtract(new BigDecimal(i));
 	}
 }

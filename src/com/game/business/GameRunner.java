@@ -29,7 +29,7 @@ public class GameRunner {
 		int[] dicePl1 = {2,4,4,2,6,2,2,4,2,1};
 		int[] dicePl2 = {2,5,4,7,6,5,2,2,3,1};
 		
-		for(int i=0; i<10; i++) {
+		for(int i=0; i<2; i++) {
 			players[0].move(dicePl1[i], board,bank);
 			players[1].move(dicePl2[i], board,bank);
 		}

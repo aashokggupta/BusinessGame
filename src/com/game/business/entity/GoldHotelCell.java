@@ -17,6 +17,12 @@ public class GoldHotelCell extends Hotel implements Cell {
 
 
 
+	public GoldHotelCell() {
+		// TODO Auto-generated constructor stub
+	}
+
+
+
 	@Override
 	public void performAction(Player player, Bank bank, Board board) {
 			if(player.getName().equals(playerOwner.getName())) {

@@ -1,7 +1,6 @@
 package com.game.business.entity;
 
 public class PlatinumHotelCell extends Hotel implements Cell {
-
 	private boolean isOwner = false;
 	private Player playerOwner;
 	
@@ -11,6 +10,12 @@ public class PlatinumHotelCell extends Hotel implements Cell {
 		super();
 		this.isOwner = isOwner;
 		this.playerOwner = playerOwner;
+	}
+
+
+
+	public PlatinumHotelCell() {
+		// TODO Auto-generated constructor stub
 	}
 
 
